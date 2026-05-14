@@ -1,0 +1,16 @@
+# GAMS temporary files
+*.log
+*.lst
+*.lxi
+*.gsp
+*.put
+*.tmp
+*.g00
+
+# Python cache
+__pycache__/
+*.pyc
+
+# System
+.DS_Store
+Thumbs.db
