@@ -1,44 +1,217 @@
-# Energy-CGE-Model
+## Economic Structure
 
-A Computable General Equilibrium (CGE) model for analysing energy transition and sustainability policies.
+The model represents a simplified single-economy Computable General Equilibrium (CGE) framework designed to analyse interactions between the energy system, production sectors, households, trade, and environmental policies.
 
-## Repository Structure
+The economy is calibrated using a Social Accounting Matrix (SAM), ensuring consistency between production, income generation, consumption, trade, and government accounts.
 
-```text
-data/          -> SAM and calibration data
-gams/          -> CGE model files
-outputs/       -> simulation outputs
-figures/       -> charts and visualizations
-documentation/ -> model notes
-```
+---
 
-## Main Files
+## Economic Agents
 
-### CGE Model
+### Households
 
-```text
-gams/Energy_modelling.gms
-```
+Households receive income from:
+- labour,
+- capital,
+- and transfers.
 
-### Social Accounting Matrix
+They allocate income across:
+- consumption,
+- savings,
+- and taxes.
 
-```text
-data/SAM.xlsx
-```
+Household demand responds to:
+- relative prices,
+- income changes,
+- and energy policy shocks.
 
-## Example Applications
+The model captures how climate and energy policies affect:
+- consumer welfare,
+- purchasing power,
+- and energy consumption patterns.
 
-- Carbon taxation
-- Renewable energy transition
-- Energy efficiency
-- Trade and energy interactions
+---
 
-## Software
+### Firms
 
-- GAMS
-- Python
-- Excel
+Firms produce goods and services by combining:
+- labour,
+- capital,
+- intermediate inputs,
+- and energy inputs.
 
-## Author
+Production behaviour follows a nested production structure where firms can substitute between:
+- fossil fuels,
+- renewable energy,
+- capital,
+- and labour,
 
-Amara Zongo
+depending on relative prices and policy incentives.
+
+Firms maximize profits subject to production technology constraints.
+
+---
+
+### Government
+
+The government:
+- collects taxes,
+- redistributes income,
+- and purchases goods and services.
+
+Government revenues may include:
+- indirect taxes,
+- import tariffs,
+- carbon taxes,
+- and production taxes.
+
+The government account allows the analysis of:
+- fiscal impacts of climate policies,
+- subsidy schemes,
+- and public support for renewable energy transitions.
+
+---
+
+### Rest of the World
+
+The model includes international trade through:
+- imports,
+- exports,
+- and foreign savings.
+
+Domestic and imported goods are differentiated using the Armington assumption, allowing imperfect substitution between local and foreign products.
+
+Trade interactions make it possible to analyse:
+- energy import dependence,
+- competitiveness effects,
+- and international transmission of climate policies.
+
+---
+
+## Energy Sectors
+
+The model explicitly represents energy-related activities and their interactions with the broader economy.
+
+### Fossil Fuel Sector
+
+The fossil fuel sector includes:
+- conventional energy production,
+- carbon-intensive fuels,
+- and energy supply to production sectors.
+
+This sector is sensitive to:
+- carbon pricing,
+- fuel taxes,
+- and energy demand reductions.
+
+---
+
+### Renewable Energy Sector
+
+The renewable energy sector represents cleaner energy technologies such as:
+- solar,
+- wind,
+- hydro,
+- and other low-carbon energy sources.
+
+The model allows renewable energy expansion through:
+- subsidies,
+- productivity improvements,
+- and substitution away from fossil fuels.
+
+---
+
+### Transport Sector
+
+The transport sector captures:
+- energy use in transportation,
+- fuel demand,
+- and interactions between mobility and energy prices.
+
+Policy experiments can evaluate:
+- fuel taxation,
+- transport electrification,
+- and efficiency improvements.
+
+---
+
+### Industrial Sector
+
+The industrial sector represents energy-intensive production activities that rely on:
+- intermediate inputs,
+- electricity,
+- fossil fuels,
+- labour,
+- and capital.
+
+The model evaluates how industrial competitiveness and production costs respond to climate and energy policies.
+
+---
+
+## Policy Experiments
+
+The model is designed to simulate alternative climate and energy transition scenarios.
+
+### Carbon Tax
+
+A carbon tax increases the cost of carbon-intensive energy sources and production activities.
+
+The simulation evaluates impacts on:
+- emissions,
+- energy demand,
+- GDP,
+- sectoral output,
+- and household welfare.
+
+---
+
+### Renewable Energy Subsidy
+
+Renewable subsidies reduce the relative cost of clean energy technologies and encourage substitution away from fossil fuels.
+
+The analysis investigates:
+- renewable energy expansion,
+- structural transformation,
+- and emission reductions.
+
+---
+
+### Fossil Fuel Reduction Scenario
+
+This scenario evaluates the economic consequences of reducing fossil fuel dependence through:
+- lower fossil fuel supply,
+- production restrictions,
+- or declining demand.
+
+The model captures:
+- sectoral adjustments,
+- trade effects,
+- and energy system transformation.
+
+---
+
+### Energy Efficiency Improvements
+
+Energy efficiency shocks reduce energy input requirements in production and consumption activities.
+
+The simulations assess:
+- lower energy intensity,
+- productivity improvements,
+- and economic gains associated with technological progress.
+
+---
+
+## Model Outputs
+
+The model generates economy-wide indicators including:
+
+- Gross Domestic Product (GDP)
+- Sectoral production
+- Energy demand
+- Trade flows
+- Household welfare
+- Government revenues
+- Relative prices
+- Emissions and energy use indicators
+
+These outputs support the analysis of sustainability transitions and climate policy impacts.
