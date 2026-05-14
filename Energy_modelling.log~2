@@ -1,0 +1,171 @@
+
+--- Job Energy_modelling.gms Start 05/13/26 16:53:08 47.3.0 125a0e22 WEX-WEI x86 64bit/MS Windows
+--- Applying:
+    C:\GAMS\47\gmsprmNT.txt
+--- GAMS Parameters defined
+    Input "C:\Users\zongoa\Documents\cgemod\pract\clmod\Energy modelling\Energy_modelling.gms"
+    PageSize 0
+    ScrDir "C:\Users\zongoa\Documents\cgemod\pract\clmod\Energy modelling\225a\"
+    SysDir C:\GAMS\47\
+    LogOption 3
+    ErrMsg 1
+    ErrorLog 99
+    IDE 1
+    GDX "C:\Users\zongoa\Documents\cgemod\pract\clmod\Energy modelling\Energy_modelling.gdx"
+    LstTitleLeftAligned 1
+Licensee: MUD- 10 User License                           S230606|0002CO-WIN
+          Planbureau voor de Leefomgeving, BPO                   DC16598-S1
+          C:\Users\zongoa\Documents\GAMS\gamslice.txt
+          License Admin: Kris Rambaran, Ict-regie@pbl.nl                   
+          The maintenance period of the license will expire on Jun 20, 2026
+Processor information: 1 socket(s), 10 core(s), and 12 thread(s) available
+GAMS 47.3.0   Copyright (C) 1987-2024 GAMS Development. All rights reserved
+--- Starting compilation
+--- Energy_modelling.gms(3) 2 Mb
+--- call GDXXRW SAM.xlsx output=SAM.gdx par=SAM rng= SAM!A1:L12 Rdim=1 Cdim=1
+
+GDXXRW           47.3.0 125a0e22 Jul 15, 2024          WEI x86 64bit/MS Window
+Input file : C:\Users\zongoa\Documents\cgemod\pract\clmod\Energy modelling\SAM.xlsx
+Output file: C:\Users\zongoa\Documents\cgemod\pract\clmod\Energy modelling\SAM.gdx
+Total time = 1204 Ms
+--- Energy_modelling.gms(12) 3 Mb
+--- GDXin=C:\Users\zongoa\Documents\cgemod\pract\clmod\Energy modelling\SAM.gdx
+--- GDX File ($gdxIn) C:\Users\zongoa\Documents\cgemod\pract\clmod\Energy modelling\SAM.gdx
+--- Energy_modelling.gms(477) 3 Mb
+--- Starting execution: elapsed 0:00:01.318
+--- Energy_modelling.gms(400) 4 Mb
+--- Generating CNS model energyCGE
+--- Energy_modelling.gms(419) 6 Mb
+---   43 rows  44 columns  173 non-zeroes
+---   133 nl-code  52 nl-non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 3.810E+00, 1.650E+02] - Zero values observed as well
+--- Bound     [min, max] : [ 1.000E+00, 1.000E+00] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.163E-02, 1.650E+02]
+--- Energy_modelling.gms(419) 4 Mb
+--- Executing CONOPT (Solvelink=2): elapsed 0:00:01.346
+
+CONOPT 4         47.3.0 125a0e22 Jul 15, 2024          WEI x86 64bit/MS Window
+
+ 
+ 
+    C O N O P T   version 4.35
+    Copyright (C) GAMS Software GmbH
+                  GAMS Development Corporation
+ 
+    Will use up to 12 threads.
+ 
+ 
+    The user model has 43 constraints and 44 variables
+    with 173 Jacobian elements, 52 of which are nonlinear.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+       0   0          3.8788199072E+02 (Input point)
+ 
+    The pre-triangular part of the model has 2 constraints and 3 variables.
+    The post-triangular part of the model has 6 constraints and variables.
+ 
+    Preprocessed model has 35 constraints and 35 variables
+    with 149 Jacobian elements, 48 of which are nonlinear.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+                      1.8584420932E+02 (Full preprocessed model)
+                      4.6770623464E+00 (After scaling)
+       1              1.0886498092E-09
+ 
+ ** Feasible solution to a square system.
+ 
+--- Reading solution for model energyCGE
+--- Executing after solve: elapsed 0:00:01.410
+--- Energy_modelling.gms(431) 4 Mb
+--- Generating CNS model energyCGE
+--- Energy_modelling.gms(433) 6 Mb
+---   43 rows  44 columns  173 non-zeroes
+---   133 nl-code  52 nl-non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 3.810E+00, 1.650E+02] - Zero values observed as well
+--- Bound     [min, max] : [ 1.000E+00, 1.000E+00] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.163E-02, 1.650E+02]
+--- Energy_modelling.gms(433) 4 Mb
+--- Executing CONOPT (Solvelink=2): elapsed 0:00:01.427
+
+CONOPT 4         47.3.0 125a0e22 Jul 15, 2024          WEI x86 64bit/MS Window
+
+ 
+ 
+    C O N O P T   version 4.35
+    Copyright (C) GAMS Software GmbH
+                  GAMS Development Corporation
+ 
+    Will use up to 12 threads.
+ 
+ 
+    The user model has 43 constraints and 44 variables
+    with 173 Jacobian elements, 52 of which are nonlinear.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+       0   0          1.8782036537E-08 (Input point)
+ 
+    The pre-triangular part of the model has 2 constraints and 3 variables.
+    The post-triangular part of the model has 6 constraints and variables.
+ 
+    Preprocessed model has 35 constraints and 35 variables
+    with 149 Jacobian elements, 48 of which are nonlinear.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+                      1.8782036537E-08 (Full preprocessed model)
+                      1.1672264891E-09 (After scaling)
+       1              1.1672264891E-09
+ 
+ ** Feasible solution to a square system.
+ 
+--- Reading solution for model energyCGE
+--- Executing after solve: elapsed 0:00:01.463
+--- Energy_modelling.gms(440) 4 Mb
+--- Generating CNS model energyCGE
+--- Energy_modelling.gms(442) 6 Mb
+---   43 rows  44 columns  178 non-zeroes
+---   133 nl-code  52 nl-non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 2.175E-03, 1.650E+02] - Zero values observed as well
+--- Bound     [min, max] : [ 1.000E+00, 1.000E+00] - Zero values observed as well
+--- Matrix    [min, max] : [ 2.175E-03, 1.650E+02]
+--- Energy_modelling.gms(442) 4 Mb
+--- Executing CONOPT (Solvelink=2): elapsed 0:00:01.467
+
+CONOPT 4         47.3.0 125a0e22 Jul 15, 2024          WEI x86 64bit/MS Window
+
+ 
+ 
+    C O N O P T   version 4.35
+    Copyright (C) GAMS Software GmbH
+                  GAMS Development Corporation
+ 
+    Will use up to 12 threads.
+ 
+ 
+    The user model has 43 constraints and 44 variables
+    with 178 Jacobian elements, 52 of which are nonlinear.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+       0   0          4.6790013648E+00 (Input point)
+ 
+    The pre-triangular part of the model has 1 constraints and 2 variables.
+    The post-triangular part of the model has 7 constraints and variables.
+ 
+    Preprocessed model has 35 constraints and 35 variables
+    with 149 Jacobian elements, 48 of which are nonlinear.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+                      3.1107009008E-02 (Full preprocessed model)
+                      3.1106991393E-02 (After scaling)
+       1              3.4084286088E-10
+ 
+ ** Feasible solution to a square system.
+ 
+--- Reading solution for model energyCGE
+--- Executing after solve: elapsed 0:00:01.518
+--- Energy_modelling.gms(468) 4 Mb
+--- GDX File C:\Users\zongoa\Documents\cgemod\pract\clmod\Energy modelling\Energy_modelling.gdx
+*** Status: Normal completion
+--- Job Energy_modelling.gms Stop 05/13/26 16:53:10 elapsed 0:00:01.537
